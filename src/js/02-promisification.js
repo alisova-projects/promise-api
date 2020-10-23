@@ -4,7 +4,7 @@
  * - Функция которая возвращает промис
  */
 
-// const makeOrder = dish => {
+ // const makeOrder = dish => {
 //   const DELAY = 1000;
 
 //   return new Promise((resolve, reject) => {
@@ -38,21 +38,19 @@
  * - Promise.reject()
  */
 
-// const makeOrder = dish => {
-//   return Promise.resolve(`✅ Вот ваш заказ: ${dish}`);
-// };
+const makeOrder = dish => {
+  return Promise.resolve(`✅ Вот ваш заказ: ${dish}`);
+};
 
-// makeOrder('пирожок').then(onMakeOrderSuccess);
+makeOrder('пирожок').then(onMakeOrderSuccess);
 
-// function onMakeOrderSuccess(result) {
-//   console.log('onMakeOrderSuccess');
-//   console.log(result);
-// }
+function onMakeOrderSuccess(result) {
+  console.log('onMakeOrderSuccess');
+  console.log(result);
+}
 
-// function onMakeOrderError(error) {
-//   console.log('onMakeOrderError');
-//   console.log(error);
-// }
+
+// 😁 - вставить эмоджи: 'Пуск' + '.' или 'Пуск' + ';'
 
 /*
  * Покемоны с https://pokeapi.co/
@@ -78,6 +76,8 @@
 //   console.log('Это в блоке catch');
 //   console.log(error);
 // }
+
+//=======================================================================
 
 // makePromise
 // const makePromise = () => {
